@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{profile.name}} Sinisterra</mat-card-title>
+    <mat-card-subtitle>{{profile.location}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{profile.avatar_url}}" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      <span class="badge badge-primary mr-3">{{ profile.bio }} </span>
+
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button href="{{linkedinURL}}">LINKEDIN</a>
+    <a mat-button href="{{profile.html_url}}">GITHUB</a>
+  </mat-card-actions>
+</mat-card>
