@@ -1,4 +1,6 @@
-import { AboutMeCardComponent } from './../../about-me-card/about-me-card.component';
+import { ProjectsComponent } from './../../components/projects/projects.component';
+
+import { AboutMeCardComponent } from '../../components/about-me-card/about-me-card.component';
 import { LandingComponent } from './landing.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,10 +11,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
-  declarations: [LandingComponent, AboutMeCardComponent],
+  declarations: [LandingComponent, AboutMeCardComponent, ProjectsComponent],
   imports: [
     CommonModule,
     LandingRoutingModule,
@@ -20,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatButtonToggleModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ]
 })
 export class LandingModule { }

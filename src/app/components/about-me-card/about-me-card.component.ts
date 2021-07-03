@@ -1,5 +1,7 @@
-import { GithubService } from './../services/github.service';
+import { Profile } from '../../class/profile';
+import { GithubService } from '../../services/github.service';
 import { Component, OnInit } from '@angular/core';
+
 
 
 @Component({
@@ -15,6 +17,7 @@ export class AboutMeCardComponent implements OnInit {
 
   constructor(private perfGitHub: GithubService) {
 
+    this.profile = ''
     this.linkedinURL = "https://www.linkedin.com/in/luciano-sinisterra-4a413913b/"
    }
 

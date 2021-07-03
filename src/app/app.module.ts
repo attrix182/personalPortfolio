@@ -11,7 +11,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ScrollDirective } from './directives/scroll.directive';
 
 
 
@@ -19,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScrollDirective
   ],
   imports: [
     BrowserModule,
