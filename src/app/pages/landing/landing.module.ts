@@ -1,3 +1,4 @@
+import { ScrollDirective } from './../../directives/scroll.directive';
 import { ProjectsComponent } from './../../components/projects/projects.component';
 
 import { AboutMeCardComponent } from '../../components/about-me-card/about-me-card.component';
@@ -12,10 +13,12 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { MouseHoverDirective } from 'src/app/directives/mouse-hover.directive';
+import { ContactMeComponent } from 'src/app/components/contact-me/contact-me.component';
 
 
 @NgModule({
-  declarations: [LandingComponent, AboutMeCardComponent, ProjectsComponent],
+  declarations: [LandingComponent, AboutMeCardComponent, ProjectsComponent, ScrollDirective, MouseHoverDirective, ContactMeComponent],
   imports: [
     CommonModule,
     LandingRoutingModule,

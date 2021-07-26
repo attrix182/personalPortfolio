@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Globals } from './../../globals';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -8,15 +9,32 @@ import { Component, OnInit } from '@angular/core';
 export class LandingComponent implements OnInit {
 
   public aboutMe: boolean = true;
+  public contactMe: boolean = false;
 
   public classAboutMe: string = 'animate__animated animate__backInLeft';
+  public classContact: string = 'animate__animated animate__backInLeft';
+  
   public btnMyProjects: string = 'animate__animated animate__backInLeft';
 
-  constructor() {
+  scrolleo: any = '';
+
+  constructor(public globals: Globals) {
+
+this.scrolleo = globals.role
+
+
+    if (globals.role > 150) {
+      this.openMyProjects()
+    }
+
 
   }
 
+
   ngOnInit(): void {
+
+
+
   }
 
   openMyProjects() {
@@ -24,11 +42,34 @@ export class LandingComponent implements OnInit {
 
     setTimeout(() => {
       this.aboutMe = false
+      this.contactMe = false
       this.btnMyProjects = 'animate__animated animate__backInUp'
 
-    }, 600);
+    }, 350);
 
   }
+
+
+  openMyProfile() {
+    this.classAboutMe = 'animate__animated animate__backInDown'
+
+    setTimeout(() => {
+      this.aboutMe = true
+      this.contactMe = false
+      this.btnMyProjects = 'animate__animated animate__backInDown'
+
+    }, 250);
+
+  }
+
+  openContact() {
+
+
+      this.contactMe = true
+
+
+  }
+
 
 
 

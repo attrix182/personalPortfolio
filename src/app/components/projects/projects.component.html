@@ -1,7 +1,10 @@
-
-<mat-grid-list cols="2" rowHeight="2:1">
-    <mat-grid-tile> <img src="../assets/projectsFiles/saladejuegos.png" height="95%"> </mat-grid-tile>
-    <mat-grid-tile> <img src="../assets/projectsFiles/clinica.png" height="95%"> </mat-grid-tile>
-    <mat-grid-tile> <img src="../assets/projectsFiles/saladejuegos.png" height="95%"> </mat-grid-tile>
-    <mat-grid-tile> <img src="../assets/projectsFiles/saladejuegos.png" height="95%"></mat-grid-tile>
-  </mat-grid-list>
+<mat-grid-list cols="2" rowHeight="2:1" style="max-width: 850px;">
+  <mat-grid-tile appMouseHover (click)="goTo('https://tpsaladejuegosutn.web.app/')"> <img
+      src="../assets/projectsFiles/saladejuegos.png" height="95%"></mat-grid-tile>
+  <mat-grid-tile appMouseHover (click)="goTo('https://clinicaonlinetp.web.app/')"> <img
+      src="../assets/projectsFiles/clinica.png" height="95%"> </mat-grid-tile>
+  <mat-grid-tile appMouseHover (click)="goTo('http://www.overclocksolutions.com.ar/')"> <img
+      src="../assets/projectsFiles/os.png" height="95%"> </mat-grid-tile>
+  <mat-grid-tile appMouseHover (click)="goTo('')"> <img src="../assets/projectsFiles/cs.jpg" height="95%">
+  </mat-grid-tile>
+</mat-grid-list>

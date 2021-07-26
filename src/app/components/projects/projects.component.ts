@@ -12,4 +12,9 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goTo(url:string)
+  {
+    location.assign(url)
+  }
+
 }
