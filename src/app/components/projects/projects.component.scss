@@ -1,0 +1,36 @@
+.card {
+  background-color: #fefefe;
+  max-width: 23rem;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.btnFab:hover {
+  color: black;
+
+}
+
+.btnFab {
+  color: #0D2F53;
+
+}
+
+.example-card {
+  max-width: 350px;
+  width: 350px;
+
+
+}
+
+
+
+.img-card {
+    display: flex;
+    align-items: center;
+}
+
+.img-card img{
+    object-fit: contain;
+}

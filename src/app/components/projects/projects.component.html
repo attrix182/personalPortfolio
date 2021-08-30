@@ -1,14 +1,96 @@
-<mat-grid-list cols="2" rowHeight="2:1" style="max-width: 850px;">
-  <mat-grid-tile appMouseHover (click)="goTo('https://tpsaladejuegosutn.web.app/')"> <img
-      src="../assets/projectsFiles/saladejuegos.png" height="95%"></mat-grid-tile>
-  <mat-grid-tile appMouseHover (click)="goTo('https://clinicaonlinetp.web.app/')"> <img
-      src="../assets/projectsFiles/clinica.png" height="95%"> </mat-grid-tile>
-  <mat-grid-tile appMouseHover (click)="goTo('http://www.overclocksolutions.com.ar/')"> <img
-      src="../assets/projectsFiles/os.png" height="95%"> </mat-grid-tile>
+<div id="carouselExampleCaptions" class="carousel slide">
 
-  <mat-grid-tile appMouseHover (click)="goTo('https://abmsaen.web.app/')"> <img
-      src="https://user-images.githubusercontent.com/44885834/125879344-105dad5b-93be-4de2-b6de-b08aa40c8050.png"
-      height="95%"> </mat-grid-tile>
-  <!-- <mat-grid-tile appMouseHover (click)="goTo('')"> <img src="../assets/projectsFiles/cs.jpg" height="95%"> -->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
 
-</mat-grid-list>
+    <div class="carousel-item active" align=center>
+      <mat-card id="Clinica" class="example-card">
+        <img mat-card-image src="../../../assets/projectsFiles/clinic.jpg" alt="..." width="100%">
+        <mat-card-content>
+          <h2>Clinica Online</h2>
+          <p>
+            Consiste en un sistema completo para una clinica, tanto del lado del paciente como del medico.
+            (Angular + Firebase)
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a class="btn btn-white btnFab" target="blank" href="https://github.com/attrix182/tpClinicaOnlineLab4">
+            <i class="fab fa-github-square icon"></i>
+            <h5>Ver codigo</h5>
+          </a>
+
+          <a class="btn btn-white btnFab" target="blank" href="https://clinicaonlinetp.web.app/">
+            <i class="fas fa-globe icon"></i>
+            <h5>Ver sitio</h5>
+          </a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div class="carousel-item" align=center>
+      <mat-card id="SalaDeJuegos" class="example-card">
+        <img mat-card-image src="../../../assets/projectsFiles/saladejuegos.jpg" alt="...">
+        <mat-card-content>
+          <h2>Sala de juegos</h2>
+          <p class="card-text ">Es una web con registro/login, minijuegos y control de puntajes
+            <br>
+            (Angular + Firebase)
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a class="btn btn-white btnFab" target="blank" href="https://github.com/attrix182/salaDeJuegosLAB4">
+            <i class="fab fa-github-square icon"></i>
+            <h5>Ver codigo</h5>
+          </a>
+
+          <a class="btn btn-white btnFab" target="blank" href="https://tpsaladejuegosutn.web.app/">
+            <i class="fas fa-globe icon"></i>
+            <h5>Ver sitio</h5>
+          </a>
+
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div class="carousel-item" align=center>
+      <mat-card id="SalaDeJuegos" class="example-card">
+        <img mat-card-image src="../../../assets/projectsFiles/saen.jpg" alt="...">
+        <mat-card-content>
+          <h2>ABM SAEN</h2>
+          <p class="card-text ">Consiste en un sistema de Alta, baja y modifiacion de productos.
+            <br>
+            (Angular + SQL)
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a class="btn btn-white btnFab" target="blank" href="https://github.com/attrix182/Control-de-inventario-SAEN-Stack">
+            <i class="fab fa-github-square icon"></i>
+            <h5>Ver codigo</h5>
+          </a>
+
+          <a class="btn btn-white btnFab" target="blank" href="https://abmsaen.web.app/">
+            <i class="fas fa-globe icon"></i>
+            <h5>Ver sitio</h5>
+          </a>
+
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+  </div>
+
+
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
