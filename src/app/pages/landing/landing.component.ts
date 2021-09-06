@@ -13,62 +13,55 @@ export class LandingComponent implements OnInit {
 
   public classAboutMe: string = 'animate__animated animate__backInLeft';
   public classContact: string = 'animate__animated animate__backInLeft';
-  
+
   public btnMyProjects: string = 'animate__animated animate__backInLeft';
 
   scrolleo: any = '';
 
-  constructor(public globals: Globals) {
 
-this.scrolleo = globals.role
+  constructor(public globals: Globals) { }
 
-
-    if (globals.role > 150) {
-      this.openMyProjects()
-    }
-
-
+  ngOnInit() {
+   
   }
 
 
-  ngOnInit(): void {
 
 
 
-  }
 
-  openMyProjects() {
-    this.classAboutMe = 'animate__animated animate__backOutUp '
+openMyProjects() {
+  this.classAboutMe = 'animate__animated animate__backOutUp '
 
-    setTimeout(() => {
-      this.aboutMe = false
-      this.contactMe = false
-      this.btnMyProjects = 'animate__animated animate__backInUp'
+  setTimeout(() => {
+    this.aboutMe = false
+    this.contactMe = false
+    this.btnMyProjects = 'animate__animated animate__backInUp'
 
-    }, 350);
+  }, 350);
 
-  }
-
-
-  openMyProfile() {
-    this.classAboutMe = 'animate__animated animate__backInDown'
-
-    setTimeout(() => {
-      this.aboutMe = true
-      this.contactMe = false
-      this.btnMyProjects = 'animate__animated animate__backInDown'
-
-    }, 250);
-
-  }
-
-  openContact() {
+}
 
 
-      this.contactMe = true
+openMyProfile() {
+  this.classAboutMe = 'animate__animated animate__backInDown'
+
+  setTimeout(() => {
+    this.aboutMe = true
+    this.contactMe = false
+    this.btnMyProjects = 'animate__animated animate__backInDown'
+
+  }, 250);
+
+}
+
+openContact() {
 
 
-  }
+  this.contactMe = true
+
+
+}
 
 
 

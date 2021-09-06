@@ -13,8 +13,6 @@ import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { Globals } from './globals';
 
-
-
 @NgModule({
   declarations: [
     AppComponent
@@ -32,5 +30,7 @@ import { Globals } from './globals';
   ],
   providers: [ Globals ],
   bootstrap: [AppComponent]
+  
+
 })
 export class AppModule { }
