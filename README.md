@@ -5,6 +5,6 @@ Este es un proyecto personal que consiste en una Web desarrollada en angular en 
 
 ## Link deploy
 
-https://sinisterraluciano-dev.web.app/
+https://sinisterraluciano.com.ar/
 
 
