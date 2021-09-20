@@ -14,6 +14,7 @@ export class AboutMeCardComponent implements OnInit {
   
   public profile:any;
   public linkedinURL:string
+  public linkCV:string = 'https://drive.google.com/file/d/1GO4cBvlyghIyTNts3-UVQC_c-DuEzoEO/view?usp=sharing'
 
   constructor(private perfGitHub: GithubService) {
 
