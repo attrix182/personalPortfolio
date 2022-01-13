@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deployFirebase": "ng build --configuration production & firebase deploy",
-    "deploy": "ng build --configuration production & netlify deploy --prod"
+    "deploy": "ng build --configuration production & netlify deploy --prod",
+    "deployHostinger": "mv ./dist/portfolioLS/. ../portfolioDist/. & cd portfolioDist & git add . & git commit -m update & git push & echo 'Deployed to Hostinger'"
   },
   "private": true,
   "dependencies": {
