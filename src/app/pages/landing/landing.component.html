@@ -29,7 +29,7 @@
     <button mat-raised-button (click)="openMyProjects()" class="mb-3" *ngIf="aboutMe" 
       (scrollPos)="openMyProjects()">Proyectos</button>
 
-    <button mat-raised-button (click)="openMyProfile()" class="mb-3" *ngIf="!aboutMe" >Sobre mi</button>
+    <button mat-raised-button (click)="openMyProfile()" class="mb-3" *ngIf="!aboutMe">Sobre mi</button>
     <br>
 
     <app-projects *ngIf="!aboutMe"></app-projects>
