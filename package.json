@@ -9,7 +9,7 @@
     "test": "ng test",
     "deployFirebase": "ng build --configuration production & firebase deploy",
     "deployNetlify": "ng build --configuration production & netlify deploy --prod",
-    "deploy": "ng build --output-hashing none & cp ./dist/portfolioLS/. ../portfolioDist/. & cd portfolioDist & git add . & git commit -m update & git push & echo 'Deployed to Hostinger'"
+    "deploy": "ng build --output-hashing none & cp ./dist/portfolioLS/*.* ../portfolioDist/. & cd portfolioDist & git add . & git commit -m update & git push & echo 'Deployed to Hostinger'"
   },
   "private": true,
   "dependencies": {
